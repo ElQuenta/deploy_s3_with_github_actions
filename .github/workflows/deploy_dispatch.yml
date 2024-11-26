@@ -1,4 +1,4 @@
-name: Desplegando pagina estatica en S3
+name: Desplegando pagina estatica en S3 de forma manual
 on:
  workflow_dispatch: 
 
@@ -23,4 +23,4 @@ jobs:
 
      - name: Deploy to AWS S3
        run: |
-         aws s3 sync . s3://github-actions-second-deploy  --delete
+         aws s3 sync . s3://tirhd-github-actions-bucket  --delete
