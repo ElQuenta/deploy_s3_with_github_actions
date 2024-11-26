@@ -25,4 +25,4 @@ jobs:
 
      - name: Deploy to AWS S3
        run: |
-         aws s3 sync . s3://deploy-s3-with-github-actions --delete
+         aws s3 sync . s3://github-actions-second-deploy  --delete
